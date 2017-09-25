@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 30px;
+  background-color: #f6f7fb;
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #7C5119;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  width: 180px;
+  margin: 0px 1px 1px 4px;
+  padding: 8px;
+  border-bottom: 3px solid;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.item .image {
+  display: block;
+  width: 100%;
+}
+
+.item .category {
+  margin: 15px 9px 10px;
+  color: #aaa;
+  letter-spacing: 1px;
+  font-family: "Trebuchet MS", "Hiragino Kku Gothic ProN", Meiryo, sans-serif;
+}
+
+.item .category::before {
+  content: '';
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  border: 2px solid;
+  border-radius: 50%;
+  vertical-align: -5px;
+}
+
+.item .description {
+  margin: 10px;
+  line-height: 1.5;
+}
+
+.item > a {
+  display: block;
+  margin: -8px -8px -11px;
+  padding: 8px 8px 11px;
+  border-radius: inherit;
+  color: #777;
+  transition: all 0.3s;
+}
+
+.item > a:hover {
+  box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0, 0.3);
+  opacity: 0.8;
+}
+
+.header {
+  padding: 25px 0;
+  border-bottom: none;
+  text-align: center;
+}
+
+.logo {
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.logo:hover {
+  transform: rotate(5deg);
+}
+
+.nav {
+  margin: 35px auto 10px;
+}
+
+.nav-item {
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.nav-item a {
+  display: inline-block;
+}
+
+.nav-item a::after {
+  content: '';
+  display: block;
+  width: 0;
+  margin: 6px auto 0;
+  border-bottom: 2px solid #7C5119;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+}
